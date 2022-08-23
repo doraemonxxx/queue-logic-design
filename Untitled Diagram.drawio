@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-23T22:34:38.874Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="cTYjcPR2YW7YrUOpX6UJ" version="20.2.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-23T22:42:11.380Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="G4sgw5cEEw8AgxmA3F4z" version="20.2.6" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1425" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" background="none" math="0" shadow="0">
+    <mxGraphModel dx="867" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -208,7 +208,7 @@
           <mxGeometry x="590" y="720" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4b0HBvVVqxYmfOgEoiVm-106" value="&lt;b&gt;worker 2&lt;/b&gt; is for multiple queues &lt;br&gt;that have small job (contains small data)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="545" y="840" width="240" height="40" as="geometry" />
+          <mxGeometry x="545" y="860" width="240" height="40" as="geometry" />
         </mxCell>
         <mxCell id="4b0HBvVVqxYmfOgEoiVm-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="4b0HBvVVqxYmfOgEoiVm-107" target="4b0HBvVVqxYmfOgEoiVm-141">
           <mxGeometry relative="1" as="geometry" />
@@ -216,8 +216,8 @@
         <mxCell id="4b0HBvVVqxYmfOgEoiVm-107" value=":worker #1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;fillStyle=hatch;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="480" y="990" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4b0HBvVVqxYmfOgEoiVm-108" value="&lt;b&gt;worker 1&lt;/b&gt; is for single queue&lt;br&gt;that have large job (contains massive large data)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="540" y="790" width="280" height="40" as="geometry" />
+        <mxCell id="4b0HBvVVqxYmfOgEoiVm-108" value="&lt;b&gt;worker 1&lt;/b&gt; is for single queue&lt;br&gt;that have large job (contains massive large data)&lt;br&gt;&lt;br&gt;&lt;b&gt;note&lt;/b&gt;: chunk will not use this worker and queue." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="530" y="785" width="280" height="70" as="geometry" />
         </mxCell>
         <mxCell id="4b0HBvVVqxYmfOgEoiVm-112" value=":object = mapped fields and values" style="rounded=1;whiteSpace=wrap;html=1;fillStyle=auto;fontSize=12;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="890" y="240" width="120" height="60" as="geometry" />
@@ -317,6 +317,9 @@
         </mxCell>
         <mxCell id="4b0HBvVVqxYmfOgEoiVm-170" value="&lt;b&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;QUEUE START&lt;/font&gt;&lt;/b&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fontSize=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="760" y="340" width="80" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="4b0HBvVVqxYmfOgEoiVm-171" value="use async insert if possible so that we can have a callback here for the queue to start and dispatch" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="690" y="320" width="420" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
